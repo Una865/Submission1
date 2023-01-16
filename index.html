@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e9b049ff8c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css' />
+   
+  </head>
+  <body>
+<div class = "loader_bg">
+    <div class="loader">
+        <img src="https://media2.giphy.com/media/ZApioYCl0ic46pcHRp/source.gif" height="200px" width="200px">
+    </div>
+</div>    <script src='https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js'></script>
+<header class="normal-header">
+    <nav class="main-nav">
+     <ul class="nav-list">
+        <section class="nav-navigation">
+            <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='login.html';">Login</button></li>
+            <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='register.html';">Register</button></li>
+        </section>
+        
+           <div id="mobileid" class="mobil">
+             <li id="mobile-bar"><div class="cross" onclick="menuBarClick(this)"><div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+                 </div>
+             </li>     
+             <li class="nav-header"><h3 class="nav-header"><a href="index.html">Car Rental Drive</a></h3></li>
+             <li class="mobile-nav-item" onclick="location.href = 'login.html';">Login</li>
+             <li class="mobile-nav-item" onclick="location.href='register.html';">Register</li>
+
+         
+        </div>
+
+         
+
+      
+ </ul>
+ </nav>
+</header>   
+        <section class="booking">
+            <h2 class="booking-h2">Enjoy driving</h2>
+            <form class="booking-form" method="GET"  action='/search'>
+               <input type="text" placeholder="Start-location" class="booking-form-input" name="location-start">
+                <input type="date" name="from" id="from"  class="booking-form-input" required>
+                <input type="text" placeholder="End-location" class="booking-form-input" name="location-end">
+                <input type="date" name="to" id="to" class="booking-form-input" required>
+                <input type="text" name="people" class="booking-form-input-people" placeholder="People">
+                <input type="hidden" name="marka">
+                <input type="hidden" name="cenaod">
+                <input type="hidden" name="cenado">
+                <button class="booking-form-button" type="submit" onclick="location.href='search.html'"><span><i class="fas fa-search"></i></span></button>
+            </form>
+        </section>
+        <section class="destination">
+            <h3 class="destination-h3">Explore local places by car</h3>
+            
+<div class="destination-div">
+    <div class="destination-numbers">
+      <div class="destination-label" id="destination-label-1"><h6>Location</h6> <h5 class="num">12</h5></div>
+      <div class="destination-label" id="destination-label-2"><h6>Vehicles</h6> <h5 class="num">17</h5></div>
+      <div class="destination-label" id="destination-label-3"><h6>Bookings</h6> <h5 class="num">2</h5></div>
+        
+    </div>
+    <div class="destination-div-images">
+    <img id="destination-img-1" src="images/AO9T8809.jpg">
+    <img id="destination-img-2"src="images/KlMcaRKsge.jpg">
+    <img id="destination-img-3"src="images/Should-I-Rent-a-Car-or-use-Taxi.jpeg">
+</div>
+</div>
+        </section>
+        <section class="time">
+        <h3 class="time-h3">We are on track with the new technologies in car industry</h3>
+    <div class="time-div">
+        <div class="time-div-text">
+        <p>We always want to have the newest cars available to you but we also want to give a chance to older models.</p>
+</div>
+<div class="time-div-images">    
+<img class="time-div-img" src="images/преузимање.png" >
+<img class="time-div-img" src="images/right-arrow.png">
+<img class="time-div-img" src="images/bugatti-la-voiture-noire.jpg" >
+</div>       
+</div>
+        </section>
+        <section class="kompanije">
+            <h3>Companies we trust</h3>
+            <div class="logo">
+                <img src="images/ford_logo.png">
+                <img src="images/Volkswagen_logo_2019.png">
+                <img src="images/volvo-logo.jpg">
+                <img src="images/Alfa-Romeo-logo.png">
+                <img src="images/bmw_logo.jpg">
+                <img src="images/Chevrolet-logo-2004-1920x1080.jpg">
+                <img src="images/fiat.jpg">
+               <img src="images/hyundai.jpg">
+                <img src="images/Peugeot_logo.svg.png">
+                <img src="images/Toyota-logo.jpg">
+                <img src="images/skoda.png">
+                <img src="images/renault_2015_vertical.png">
+                <img src="images/KIA_motors.png">
+                <img src="images/jaguar-logo-DFCA354A04-seeklogo.com.png">
+                <img src="images/Citroen-logo-300x225.png">
+                            </div>
+        </section>
+        <section class="policy">
+<h3>There is no need for deposit, an ID is fine</h3>
+<div class="policy-div">
+<span class="policy-div-icons"><i class="far fa-address-card"></i>  <i class="fas fa-plus"></i>  <i class="fas fa-scroll"></i> = <i class="fas fa-car"></i></span>
+<p id="policy-text">If something happens insurance policies will take care of everything</p>
+<img class="policy-image" src="images/istockphoto-1166566396-1024x1024.jpg">
+</section>
+<footer>
+    <div class="footer-section">
+        <div class="footer-div">
+            <div class="footer-header"><h6>Car Rental<h6></div>
+        </div>
+        <div class="footer-div" id="links">
+    
+            <ul class="footer-links">
+                <li class="footer-link"><i  class="fab fa-facebook-f"></i></li>
+                <li class="footer-link"><i class="fab fa-instagram"></i></li>
+                <li class="footer-link"><i class="fab fa-linkedin-in"></i></li>
+            </ul>    
+        </div>
+    </div>
+    <div id="map-div"class="footer-section"><div class="footer-header"><h6>Locations</h6></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.2569746847676!2d4.371001676347927!3d52.00219517443735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b58e7e597879%3A0x3d1e05e58c2c037c!2z0KLQtdGF0L3QuNGH0LrQuCDRg9C90LjQstC10YDQt9C40YLQtdGCINGDINCU0LXQu9GE0YLRgw!5e0!3m2!1ssr!2snl!4v1673700352983!5m2!1ssr!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+
+<script type="text/javascript">
+$('.num').counterUp({delay:10, time:1000})
+</script>
+    <script src='app.js'></script>
+  </body>
+</html>
